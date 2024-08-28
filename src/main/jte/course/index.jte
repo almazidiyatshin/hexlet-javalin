@@ -1,10 +1,7 @@
 @import org.example.hexlet.dto.courses.CoursesPage
 
-<html>
-<head>
-    <title>Хекслет</title>
-</head>
-<body>
+@template.layout.page(
+content = @`
 <h1>OLOLOLO</h1>
-</body>
-</html>
+`
+)

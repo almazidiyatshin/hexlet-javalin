@@ -1,11 +1,8 @@
 @import org.example.hexlet.dto.courses.CoursesPage
 @param CoursesPage page
 
-<html>
-<head>
-    <title>Хекслет</title>
-</head>
-<body>
+@template.layout.page(
+content = @`
 <h1>${page.getHeader()}</h1>
 @if(page.getCourses().isEmpty())
     <p>Пока не добавлено ни одного курса</p>
@@ -17,5 +14,5 @@
         </div>
     @endfor
 @endif
-</body>
-</html>
+`
+)
